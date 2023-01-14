@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+}
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+nav ul li {
+    display: inline-block;
+    padding: 4px 15px;
+}
+nav li a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3 ease-in-out;
+}
+nav li a:hover {
+    color: #099065;
+}
+button {
+    border: none;
+    background: #099065;
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+button:hover {
+    background: #1a4e5a;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.content {
+    display: block;
+    margin: 100px 0px 0px 100px;
+    color: white;
+}
+.content h2 {
+    font-size: 70px;
+    margin-bottom: 50px ;
+    font-weight: bold;
+}
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.content a {
+    color: white;
+    background: #099065;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+.content a:hover{
+    background: #1a4e5a;
+}
+/* responsive */
+@media (max-width:770px) {
+    .content {
+        margin: 50px 0px 0px 50px;
+        color: white;
+    }
+}
+@media (max-width:770px) {
+    .content {
+        margin: 50px 0px 0px 50px;
+        color: white;
+    }
+    .content h2 {
+        font-size: 50px;
+        margin-bottom: 50px ;
+        font-weight: bold;
+    }
+    .content p {
+        font-size: 15px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+}
+@media (max-width:550px) {
+    .content {
+        margin: 30px 0px 0px 30px;
+        color: white;
+    }
+    .content h2 {
+        font-size: 30px;
+        margin-bottom: 30px ;
+        font-weight: bold;
+    }
+    .content p {
+        font-size: 13px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+}
